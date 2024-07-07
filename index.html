@@ -4,10 +4,157 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HTML, CSS &amp; Git Basics</title>
+    <title>CV</title>
+    <link rel="stylesheet" href="./style.css">
 </head>
 
 <body>
+    <header class="header">
+        <div class="container header-container">
+            <nav class="nav">
+                <ul class="nav-list">
+                    <li class="nav-item"><a href="#contacts" class="nav-link">Contacts</a></li>
+                    <li class="nav-item"><a href="#summary" class="nav-link">Summary</a></li>
+                    <li class="nav-item"><a href="#skills" class="nav-link">Skills</a></li>
+                    <li class="nav-item"><a href="#code" class="nav-link">Code</a></li>
+                    <li class="nav-item"><a href="#projects" class="nav-link">Projects</a></li>
+                    <li class="nav-item"><a href="#education" class="nav-link">Education</a></li>
+                    <li class="nav-item"><a href="#english" class="nav-link">English</a></li>
+                </ul>
+            </nav>
+            <div class="toggle">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+        </div>
+    </header>
+    <main class="main">
+        <div class="container main-container">
+            <section class="section section-profile" id="profile">
+                <img src="images/avatar_1.jpg" alt="avatar" class="section-profile-logo">
+                <div class="section-profile-title">
+                    <h1 class="section-title main-title">Yulia Buibarova</h1>
+                    <h3 class="section-subtitle">Front-End Developer</h3>
+                </div>
+            </section>
+            <section class="section" id="contacts">
+                <h2 class="section-title">Contacts</h2>
+                <ul class="section-list">
+                    <li class="section-item contacts-item">
+                        Mykolaiv, Ukraine
+                    </li>
+                    <li class="section-item contacts-item">
+                        Email: <a href="mailto:julka.getman@gmail.com" title="email">julka.getman@gmail.com</a>
+                    </li>
+                    <li class="section-item contacts-item">
+                        Github: <a href="https://github.com/julia2017-yg" title="github">julia2017-yg</a>
+                    </li>
+                    <li class="section-item contacts-item">
+                        Telegram: <a href="https://t.me/buibarova" title="github">@buibarova</a>
+                    </li>
+                    <li class="section-item contacts-item">
+                        Discord: <a href="https://discord.gg/zUr7wWYPXE" title="github">julia2017yg</a>
+                    </li>
+                    <li class="section-item contacts-item">
+                        Linkedin: <a href="https://www.linkedin.com/in/yulia-buibarova-3162081a8/" title="linkedin">yulia-buibarova</a>
+                    </li>
+
+                </ul>
+            </section>
+            <section class="section" id="summary">
+                <h2 class="section-title">Summary</h2>
+                <p>
+                    Programming is my hobby and my job because I find it a continuous source of inspiration and fulfillment. Creating software allows me to solve real-world problems, see immediate results of my work, and constantly grow. Every new project brings unique challenges
+                    that stimulate my intellect and creativity. The opportunity to learn new things, work in a dynamic field, and collaborate with like-minded individuals makes programming an integral part of my life, which I happily combine with my professional
+                    activities.
+                </p>
+            </section>
+            <section class="section" id="skills">
+                <h2 class="section-title">Skills</h2>
+                <ul class="section-list">
+                    <li class="section-item">
+                        Web-development:<span> HTML5, CSS3, JavaScript,Bootstrap</span>
+                    </li>
+                    <li class="section-item">
+                        Unit testing:<span>Jest</span>
+                    </li>
+                    <li class="section-item">
+                        Version control:<span> GIT, Github, Gitlab</span>
+                    </li>
+                    <li class="section-item">
+                        Graphics:<span>Adobe Photoshop/Figma</span>
+                    </li>
+                </ul>
+            </section>
+            <section class="section" id="code">
+                <h2 class="section-title">Code</h2>
+                <pre class="pre"><code>const getData = async(endpoint) =&gt; {
+    const res = await fetch(endpoint);               
+      const data = await res.json();              
+      return data;               
+    };               
+    const sorted = async() =&gt; {               
+      try {               
+        const product = await getData(urlProduct);
+          product.sort((a,b) =&gt; a.category.localeCompare(b.category) || b.price - a.price);
+          return product;
+      } catch (error) {
+        return (error);
+      } 
+  }</code></pre>
+            </section>
+            <section class="section" id="courses">
+                <h2 class="section-title">Courses</h2>
+                <ul class="section-list">
+                    <li class="section-item">
+                        SoloLearn Course<span> - HTML and CSS</span>
+                    </li>
+                    <li class="section-item">
+                        Computer Academy Step<span> - Frontend</span>
+                    </li>
+                    <li class="section-item">
+                        AltexSoft Lab<span> - Frontend Course</span>
+                    </li>
+                    <li class="section-item">
+                        QATestLab<span> - The Fundamentals of Software Testing</span>
+                    </li>
+                </ul>
+            </section>
+            <section class="section" id="projects">
+                <h2 class="section-title">Projects</h2>
+                <ul class="section-list">
+                    <li class="section-item">
+                        <a href="https://julia2017-yg.github.io/scout/">Scout</a>
+                    </li>
+                    <li class="section-item">
+                        <a href="julia2017-yg.github.io/delivary/">Delivery</a>
+                    </li>
+                    <li class="section-item">
+                        <a href="https://julia2017-yg.github.io/distance/">Distance</a>
+                    </li>
+                    <li class="section-item">
+                        <a href="https://julia2017-yg.github.io/spaceX/">spaceX</a>
+                    </li>
+                </ul>
+            </section>
+            <section class="section section-education" id="education">
+                <h2 class="section-title">Education</h2>
+                <p>V. N. Karazin Kharkiv National University</p>
+            </section>
+            <section class="section section-english" id="english">
+                <h2 class="section-title">English</h2>
+                <p>B2 - Intermediate</p>
+            </section>
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="container footer-container">
+            <div>© 2024 <a href="https://github.com/julia2017-yg" class="github nav-link">julia2017-yg</a></div>
+            <a href="https://rs.school/js/" class="rss"></a>
+        </div>
+    </footer>
+    <script src="js/index.js"></script>
 </body>
 
 </html>
